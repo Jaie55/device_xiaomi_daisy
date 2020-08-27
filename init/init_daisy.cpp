@@ -103,7 +103,7 @@ void check_device()
 
 void vendor_load_properties()
 {
-    // dalvik 
+    // dalvik
     check_device();
     property_set("dalvik.vm.heapstartsize", heapstartsize);
     property_set("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
@@ -113,6 +113,6 @@ void vendor_load_properties()
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
 
     // fingerprint
-    property_override("ro.build.description", "sakura-user 9 PKQ1.180917.001 20.1.9 release-keys");
+    property_override("ro.build.description", "daisy-user 10 QKQ1.191002.002 V11.0.7.0.QDLMIXM release-keys");
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys");
 }
